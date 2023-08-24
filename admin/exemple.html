@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemple de fenêtre modale</title>
+	<style>
+		/* Style pour la fenêtre modale */
+		.modal {
+			display: none; /* La fenêtre modale est cachée par défaut */
+			position: fixed; /* La fenêtre modale est positionnée de façon fixe */
+			z-index: 1; /* La fenêtre modale est au-dessus de tous les autres éléments */
+			left: 0;
+			top: 0;
+			width: 100%; /* La fenêtre modale prend toute la largeur */
+			height: 100%; /* La fenêtre modale prend toute la hauteur */
+			overflow: auto; /* Ajout d'un scroll si le contenu est trop grand */
+			background-color: rgba(0,0,0,0.4); /* Faites en sorte que le fond soit légèrement visible */
+		}
+
+		/* Style pour le contenu de la fenêtre modale */
+		.modal-content {
+			background-color: #fefefe; /* Couleur de fond de la fenêtre modale */
+			margin: 15% auto; /* 15% de marge en haut et en bas, centré horizontalement */
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%; /* La largeur du contenu de la fenêtre modale */
+		}
+
+		/* Style pour le bouton de fermeture */
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		/* Changement de la couleur du bouton de fermeture au survol */
+		.close:hover,
+		.close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- Bouton pour ouvrir la fenêtre modale -->
+	<button onclick="openModal()">Ouvrir la fenêtre modale</button>
+
+	<!-- Fenêtre modale -->
+	<div id="myModal" class="modal">
+		<!-- Contenu de la fenêtre modale -->
+		<div class="modal-content">
+			<!-- Bouton de fermeture -->
+			<span class="close" onclick="closeModal()">&times;</span>
+			<!-- Contenu de la fenêtre modale -->
+			<p>Ceci est le contenu de la fenêtre modale</p>
+			<a href="nouvelle_page.html" target="_blank">Ouvrir une nouvelle page</a>
+		</div>
+	</div>
+
+	<script>
+		// Fonction pour ouvrir la fenêtre modale
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		// Fonction pour fermer la fenêtre modale
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+

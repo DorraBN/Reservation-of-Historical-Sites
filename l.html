@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://fontawesome.com/icons?d=gallery">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=section id="access">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</head>
+<nav>
+  <ul>
+      <li>
+          <a href="#" >
+              <ion-icon name="reorder-four" class="fas"></ion-icon>
+        <span class="nav-item">Tunihistoire</span>
+          </a>
+      </li>
+      <li><a href="acceuil2.html">
+          <ion-icon name="home" class="fas"></ion-icon>
+          <span class="nav-item">home</span>
+      </a></li>
+      <li><a href="#"><ion-icon name="person-circle" class="fas"></ion-icon>
+
+          <span class="nav-item">profile</span></a></li>
+      
+  
+      <li><a href="#"><ion-icon name="settings" class="fas"></ion-icon>
+          <span class="nav-item">setting</span></a></li>
+          <li><a href="#"> <ion-icon name="help-circle" class="fas"></ion-icon>
+              <span class="nav-item">help</span></a></li>
+             
+  </ul>
+</nav>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+margin: 0;
+padding: 0;
+outline: none;
+border: none;
+box-sizing: border-box;
+font-family: "Poppins",sans-serif;
+}
+body{
+background: #dfe9f5;
+}
+nav{
+position: absolute;
+top: 0;
+bottom: 0;
+height: 150%;
+left: 0;
+background: #fff;
+width: 90px;
+overflow: hidden;
+transition: width 0.2s linear;
+box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+.logo{
+text-align: center;
+display: flex;
+transition: all 0.5s ease;
+margin: 10px 0 0 10px;
+}
+.logo span{
+font-weight: bold;
+padding-left: 15px;
+font-size: 28px;
+}
+.logo img{
+width: 45px ;
+height: 45px;
+border-radius: 50%;
+}
+a{
+position: relative;
+color: rgb(85,83,83);
+font-size: 20px;
+display: table;
+width: 300px;
+padding: 10px;
+text-decoration: none;
+}
+.nav-item{
+position: relative;
+top: 12px;
+margin-left: 10px;
+}
+.fas{
+position: relative;
+width: 70px;
+height: 40px;
+top: 14px;
+font-size: 20px;
+text-align: center;
+}
+a:hover{
+background: #eee;
+}
+nav:hover{
+width: 280px;
+transition: all 0.5s ease;
+}
+
+
+</style>
+<br><br>
+        <h2 style="text-align: center; font-size: 24px;">Access instructions</h2><br>
+        <hr>
+     <br><br>
+        <div class="access-info">
+          <div class="access-option">
+            <i class="fas fa-subway"></i>
+            <h3>In public transportation</h3>
+            <p>The museum is accessible by subway lines 1, 2, and 5. Get off at the "Musée d'Histoire " station and take exit 4.</p>
+          </div>
+          <div class="access-option">
+            <i class="fas fa-parking"></i>
+            <h3>by car</h3>
+            <p>Paid parking is available near the museum. The museum also has a parking lot for visitors, which costs 5 € for the day. You can also park on the street, but spaces are limited.</p>
+          </div>
+          <div class="access-option">
+            <i class="fas fa-bicycle"></i>
+            <h3>By bike</h3>
+            <p>Self-service bike stations are available near the museum. You can also lock your bike on the street, but make sure to follow the parking rules.</p>
+          </div>
+        </div>
+      </section>
+     
+      
+    <style>
+       #map {
+        margin-left: 150px;
+            height: 500px;
+            width: 80%;
+           }
+    .faq-section {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.faq {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.faq h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+#access {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+      }
+      
+      #access h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+      }
+      
+      .access-info {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .access-option {
+        width: 300px;
+        margin: 0 50px;
+        text-align: center;
+      }
+      
+      .access-option i {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: #ff5e00;
+      }
+      
+      .access-option h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      
+      .access-option p {
+        font-size: 1.1em;
+        line-height: 1.4;
+      }
+      </style>
+      <script>// Vous pouvez ajouter du JS pour rendre cette section interactive, par exemple :
+
+        // Ajouter un événement clic sur les icônes pour afficher/masquer les informations
+        const accessOptions = document.querySelectorAll('.access-option');
+        accessOptions.forEach(option => {
+          const icon = option.querySelector('i');
+          icon.addEventListener('click', () => {
+            option.classList.toggle('show-info');
+          });
+        });
+        // Accordez ou désaccordez les questions
+let questions = document.getElementsByClassName("question");
+for (let i = 0; i < questions.length; i++) {
+  questions[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let answer = this.nextElementSibling;
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+}
+
+        </script>
+        <br><br>
+       <h2 style="text-align: center; font-size: 24px;">To better find our position </h2>  <br><br>
+         <iframe
+         id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12735.422803054294!2d10.196429734534893!3d36.80649648615945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e0bf4dbd546361%3A0x397e1cc376f61c12!2sTunis%2C%20Tunisie!5e0!3m2!1sen!2sus!4v1647705477088!5m2!1sen!2sus"
+         frameborder="0"
+         style="border:0"
+         allowfullscreen=""
+         aria-hidden="false"
+         tabindex="0"
+       ></iframe>
+</body>
+<div class="container"> <a href="tickets.html" class="btn1">Return to the previous page </a></div>
+<footer>
+  <div class="contenu-footer">
+      <div class="blo footer-services">
+         
+          <ul class="liste-services">
+              <h3>Our services</h3>
+              <li><a href="">onligne reservation</a></li><br>
+              <li><a href="">online consultation</a></li><br>
+              <li><a href="">onligne billets </a></li><br>
+          </ul>
+      </div>
+      <div class="bloc footer-services">
+          <h3>Keep in touch </h3>
+          <p>Tel: 55-55-55-55</p>
+          <p>Email: serviceclient@contact.com</p>
+          <p>Adress: 6 way de l'invention </p>
+      </div>
+      <div class="bloc footer-services">
+          <h3>nos réseaux</h3>
+          <ul class="liste-media">
+              
+               <li> <a href="#"><i class="fab fa-facebook-square fa-2x" class="img"></i>facebook</a></li>  
+               <li> <a href="#"><i class="fab fa-twitter-square fa-2x"></i>twitter</a></li>  
+               <li><a href="#"><i class="fab fa-instagram fa-2x"></i>instagram</a></li>  
+              
+              <li><a href=""><i class="fab fa-youtube fa-2x"></i>youtube</a></li>
+        
+        
+        
+        
+          </ul>
+      </div>
+  </div>
+
+  <div    class="p"><br><p   style="margin-left: 495px; margin-bottom: 0px;">&copy;2023 website -all rights are reserved</p></div>
+</div>
+  </div>
+</footer>
+
+<style>
+.p{
+  justify-content: center;
+  border: 2px solid black;
+  background-color: #000;
+  font-size: 20px;
+border-spacing: 20px;
+max-width: 1800px;
+height: 60px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  h1{
+      font-size: 10vw;
+      text-align: center;
+      margin-top: 20px;
+      color: #000;
+  }
+  footer{
+      flex-shrink: 0;
+      border-top: 1px dashed #000;
+      width: 100%;
+      background-color: #333;
+      
+      color: #fff;
+  }
+  .contenu-footer{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: 20px;
+      padding: 50px 0 100px;
+  }
+img{
+  width: 20px;
+}
+.footer-contact h3,
+.footer-services h3,
+.footer-medias h3{
+font-size: 25px;
+padding-bottom: 20px;
+}
+.footer-contact p{
+padding: 5px 0;
+}
+.liste-services,
+.liste-media{
+list-style-type: none;
+
+
+}
+.liste-services li{
+padding: 2px 0;
+align-items: center;
+display: block;
+}
+.liste-services a{
+text-decoration: none;
+color:  #fff;
+}
+.liste-services a:hover{
+color: rgb(3,3,3);
+}
+.liste-media a:hover{
+color: rgb(3,3,3);
+}
+.liste-media{
+position: relative;
+right: 10px;
+}
+.liste-media img{
+width: 40px;
+margin: 10px 10px;
+}
+
+.liste-media a{
+text-decoration: none;
+color: #fff;
+display: flex;
+align-items: center;
+font-size: 25px;
+}
+@media screen and(max-width:1300px)
+{
+.contenu-footer{
+  width: 700px;
+  flex-wrap: wrap;
+}
+.bloc{
+  width: 40%;
+  margin: 0 0;
+}
+.bloc:nth-child(1),
+.bloc:nth-child(2)
+{
+  margin-bottom: 50px;
+}
+}
+img{
+width: 20px;
+}
+
+
+
+
+
+
+
+
+.bloc{
+  width: 25%;
+  margin: 0 30px;
+}
+</style>
+<style>    
+ .btn1{
+        background-color: green;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 20px;
+      }  .btn:hover {
+  background-color: #ffffff31;
+  color: #333;
+  cursor: pointer;
+}
+.container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px;
+        margin-left: 500px;
+      }
+</style>
+</html>

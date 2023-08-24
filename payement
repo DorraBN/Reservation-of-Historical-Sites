@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+          <h1>Paiement</h1>
+          <div class="form-group">
+            <label for="card-number">Numéro de carte</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+          </div>
+          <div class="form-group">
+            <label for="expiry-date">Date d'expiration</label>
+            <input type="text" id="expiry-date" placeholder="MM/AA">
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123">
+          </div>
+          <div class="form-group">
+            <label for="name">Nom sur la carte</label>
+            <input type="text" id="name" placeholder="John Doe">
+          </div>
+          <button type="submit">Payer</button>
+        </form>
+      </div>
+<style>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  </style>  
+  <script>// Code JavaScript pour valider les champs du formulaire et soumettre le formulaire au serveur de paiement
+    var form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      var cardNumber = document.getElementById("card-number").value;
+      var expiryDate = document.getElementById("expiry-date").value;
+      var cvv = document.getElementById("cvv").value;
+      var name = document.getElementById("name").value;
+      if (cardNumber.length < 16) {
+        alert("Le numéro de carte est invalide.");
+        return;
+      }
+      if (expiryDate.length < 5) {
+        alert("La date d'expiration est invalide.");
+        return;
+      }
+      if (cvv.length < 3) {
+        alert("Le code CVV est invalide.");
+        return;
+      }
+      if (name.length < 2) {
+        alert("Le nom sur la carte est invalide.");
+        return;
+      }
+      // Soumettre le formulaire au serveur de paiement
+      alert("Le paiement a été effectué avec succès.");
+      form.reset();
+    });
+    </script>    
+</body>
+</html>
